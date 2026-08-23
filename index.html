@@ -59,6 +59,24 @@
     .btn-secondary:hover {
       background: #555;
     }
+    .video-container {
+      position: relative;
+      padding-bottom: 177.77%; /* Perfect for YouTube Shorts (9:16) */
+      height: 0;
+      overflow: hidden;
+      max-width: 320px;
+      margin: 30px auto;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
     .section {
       margin: 60px 0;
       padding: 30px;
@@ -85,17 +103,26 @@
     <div class="profile">
       <h1>Dee Prime</h1>
       <p class="tagline">YouTube Creator • Collaborations • Content</p>
-      
-      <!-- REPLACE the YouTube link below with your real channel link -->
+     
       <a href="https://www.youtube.com/@deeprime3395" class="btn" target="_blank">
         ▶ Subscribe on YouTube
       </a>
+
+      <!-- Latest Short embedded here -->
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/7ZGI3l_uiRw" 
+          title="Dee Prime Short"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
 
     <div class="section">
       <h2>About</h2>
       <p>
-        Welcome to the official landing page for Dee Prime.  
+        Welcome to the official landing page for Dee Prime.
         This is the home for my YouTube content, future projects, and collaborations.
       </p>
     </div>
@@ -103,10 +130,9 @@
     <div class="section">
       <h2>Collaborations</h2>
       <p>
-        Interested in working together?  
+        Interested in working together?
         Whether it’s content collabs, features, or creative projects — let’s talk.
       </p>
-      <!-- You can later change this to your email or Discord -->
       <a href="mailto:dee.prime.paintball@gmail.com" class="btn btn-secondary">
         Contact for Collabs
       </a>
@@ -115,7 +141,7 @@
     <div class="section">
       <h2>Latest Content</h2>
       <p>
-        Check out my newest videos on YouTube.  
+        Check out my newest videos on YouTube.
         More projects and exclusive content coming soon.
       </p>
       <a href="https://www.youtube.com/@deeprime3395" class="btn" target="_blank">
