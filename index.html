@@ -61,12 +61,12 @@
     }
     .video-container {
       position: relative;
-      padding-bottom: 177.77%; /* Perfect for YouTube Shorts (9:16) */
+      padding-bottom: 56.25%; /* Correct 16:9 ratio for regular videos */
       height: 0;
       overflow: hidden;
-      max-width: 320px;
+      max-width: 640px;
       margin: 30px auto;
-      border-radius: 16px;
+      border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
     .video-container iframe {
@@ -108,11 +108,11 @@
         ▶ Subscribe on YouTube
       </a>
 
-      <!-- Latest Short embedded here -->
+      <!-- New video - autoplay muted -->
       <div class="video-container">
         <iframe 
-          src="https://www.youtube.com/embed/7ZGI3l_uiRw" 
-          title="Dee Prime Short"
+          src="https://www.youtube.com/embed/L8iY1wbcbeQ?autoplay=1&mute=1&rel=0" 
+          title="Dee Prime Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           allowfullscreen>
         </iframe>
